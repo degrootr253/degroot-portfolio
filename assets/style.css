@@ -1,0 +1,229 @@
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    color: beige;
+    background-color: rgba(85, 79, 79);
+    margin: 0px;
+    padding: 0px;
+    font-family: fantasy;
+    
+    
+    
+
+}
+.top-header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: silver;
+    
+}
+
+.top-header h1 {
+    cursor: pointer;
+    margin-right: auto;
+    font-size: 30px;
+
+}
+
+
+.nav-bar {
+    list-style-type: none;
+    
+
+}
+
+.nav-bar li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav-bar li a {
+    transition: all 0.3s ease 0s;
+    color: rgb(14, 155, 14);
+
+}
+
+.nav-bar li a:hover {
+    color: darkcyan;
+
+}
+
+
+
+button {
+    padding: 9px 25px;
+    background-color: rgb(32, 202, 168);
+    border-style: solid;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-left: 20px;
+    
+}
+
+button:hover {
+    background-color: rgb(32, 202, 0.8);
+}
+
+main {
+    display: flex;
+}
+
+/* Article filled with about me and projects*/
+
+section {
+    display: flex;
+    flex-direction: column;
+    flex:80%;
+    border-left: solid;
+}
+
+.about-me {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+
+}
+
+
+.about-me h3 {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.about-me p {
+    margin: 10px;
+    padding:10px;
+}
+
+.project-1 {
+    
+    border-style: groove;
+    margin: 10px;
+    flex: 0 3 100%
+}
+.project-1 h4 {
+    text-align: center;
+    display: block;
+    padding: 10px;
+    
+}
+
+.project-1 p {
+    text-align: center;
+    padding: 10px;
+
+}
+
+div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.projects {
+    display: block;
+    border-style: groove;
+    flex: 1 0 50%;
+    padding: 30px;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.projects h4{ 
+    text-align: center;
+
+}
+
+.projects p {
+    text-align: center;
+    
+}
+.projects:hover {
+    background-color: white;
+    color: black;
+}
+
+footer {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    min-height: 12%;
+    bottom: 0;
+    background: linear-gradient(to right, #0093c0, #2d0b00);
+    color: #fff;
+    border-top-left-radius: 125px;
+    /* height: 10%; */
+
+}
+
+footer div {
+    margin-left: 5em;
+    margin-right: auto;
+}
+
+.contact {
+    display:block;
+    text-align: center;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top: 5%;
+
+}
+.github {
+    display:block;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.LinkedIn {
+    text-align: center;
+    display: block;
+    margin-top: 5%;
+}
+
+.phone {
+    text-align: center;
+    display: block;
+    margin-top: 5%;
+
+}
+
+
+li {
+    list-style-type: none;
+}
+
+@media screen and (max-width: 768px) {
+   footer { 
+       margin-bottom: -327px;
+       flex-direction: column;
+       height: 42%;
+    }
+    .contact {
+        margin-left: 174px;
+    }
+    .github {
+        margin-left: 174px;
+    }
+    .LinkedIn {
+        margin-left: 174px;
+    }
+    .phone {
+        margin-left: 174px;
+    }
+
+}
